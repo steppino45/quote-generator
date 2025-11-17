@@ -1,0 +1,31 @@
+console.log("Hello, Ifeanyi Chukwuka!");
+
+const MY_NUMBER = 45;
+const MY_STRING = "87";
+const MY_BENCHMARK = 90;
+const CRAZY_NUMBER = "1987.68 OCTOBER 1ST";
+
+console.log(MY_NUMBER);
+console.log(MY_NUMBER + 3);
+console.log(String(MY_NUMBER) + 3);
+console.log(MY_STRING);
+console.log(MY_STRING + 3);
+console.log(Number(MY_STRING) + 3);
+console.log(Number(MY_STRING) + 3 === MY_BENCHMARK);
+console.log(Number("Jude"));
+console.log(Number(undefined));
+console.log(Number(false));
+console.log(Number.isInteger(MY_NUMBER));
+console.log(Number.isInteger(MY_STRING));
+console.log(Number.parseFloat(MY_STRING));
+console.log(Number.parseFloat(MY_NUMBER));
+console.log(Number.parseFloat(CRAZY_NUMBER));
+console.log(typeof Number.parseFloat(CRAZY_NUMBER));
+console.log(Number.parseFloat(CRAZY_NUMBER).toFixed(1));
+console.log(typeof Number.parseFloat(CRAZY_NUMBER).toFixed(1));
+console.log(Number.parseInt(CRAZY_NUMBER));
+console.log(Number.isNaN(CRAZY_NUMBER));
+console.log(isNaN(CRAZY_NUMBER));
+console.log(!isNaN(CRAZY_NUMBER));
+console.log(isNaN(MY_BENCHMARK));
+console.log(!isNaN(MY_BENCHMARK));
