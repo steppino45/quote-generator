@@ -1,5 +1,10 @@
 :root {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 .container {
@@ -19,9 +24,9 @@ h1 {
 .quote-area {
   padding: 1em;
   background-color: rgb(77, 9, 141);
-  margin: 1em 0;
-  height: 150px;
-  width: 60%;
+  margin: 1em auto;
+  min-height: 150px;
+  max-width: 90%;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
@@ -61,4 +66,29 @@ button:hover {
   font-size: 1.25rem;
   font-weight: 500;
   color: #fff;
+}
+
+/* Mobile specific adh=justments. */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #quote-display {
+    font-size: 1.2rem;
+  }
+
+  #author-display {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.85rem;
+    padding: 0.8em 1.2em;
+  }
+
+  .quote-area {
+    min-height: 120px;
+    padding: 0.8em;
+  }
 }
